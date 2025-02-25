@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  /* border: none !important; */
+}
+
+body {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+#header {
+  /* border: 1px solid #000; */
+  color: #ffffff;
+  background: #0176ba;
+}
+
+.nav-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Liter", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  height: 6em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  margin-right: 1em;
+  height: 100%;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.nav-list {
+  /* border: 1px solid #0f0; */
+  height: 100%;
+  vertical-align: middle;
+}
+
+.nav-elem {
+  /* border: 1px solid #f00; */
+  display: inline-block;
+  padding: 2.5em .8em;
+  box-sizing: border-box;
+}
