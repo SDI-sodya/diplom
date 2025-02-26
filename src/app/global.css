@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 * {
   margin: 0;
   padding: 0;
-  /* border: none !important; */
 }
 
 body {
@@ -14,7 +14,6 @@ ul {
 }
 
 #header {
-  /* border: 1px solid #000; */
   color: #ffffff;
   background: #0176ba;
 }
@@ -50,13 +49,11 @@ ul {
 }
 
 .nav-list {
-  /* border: 1px solid #0f0; */
   height: 100%;
   vertical-align: middle;
 }
 
 .nav-elem {
-  /* border: 1px solid #f00; */
   display: inline-block;
   padding: 2.5em .8em;
   box-sizing: border-box;

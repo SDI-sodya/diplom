@@ -18,7 +18,7 @@ export default function Header() {
           width={100}
           height={100}
           />
-          <div class="logo-text">
+          <div className="logo-text">
             <p>Християнська церква &quot;Перемога&quot;</p>
             <p>м. Запоріжжя</p>
           </div>
