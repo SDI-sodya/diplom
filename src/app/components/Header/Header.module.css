@@ -1,0 +1,45 @@
+#header {
+  color: #ffffff;
+  background: #0176ba;
+}
+
+.navWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mainNav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Liter", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.navLogo {
+  height: 6em;
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-size: 1.5em;
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.navList {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.navElem {
+  display: inline-block;
+  padding: 2.5em .8em;
+  box-sizing: border-box;
+}
