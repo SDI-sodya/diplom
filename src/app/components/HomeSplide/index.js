@@ -5,7 +5,7 @@ import Splide from "@splidejs/splide";
 
 export default function HomeSplide() {
   useEffect(() => {
-    new Splide(".splide", {
+    new Splide(".home-splide", {
       type: 'loop',
       drag: false,
       // autoplay: true,
@@ -17,7 +17,7 @@ export default function HomeSplide() {
   }, []);
 
   return (
-    <div className={`splide ${styles.homeSplide}`} aria-label="Splide Basic HTML Example">
+    <div className={`splide ${styles.homeSplide} home-splide`} aria-label="Splide Basic HTML Example">
       <div className="splide__track">
         <ul className="splide__list">
           <li className="splide__slide">
