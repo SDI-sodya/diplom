@@ -1,3 +1,22 @@
+.newsSection {
+  margin: 80px auto 0;
+}
+
+.sectionTitle {
+  color: #0176ba;
+  margin: 0 0 30px;
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .image {
+  background-color: #cccccc;
   border: 1px solid #000;
+  width: 100%;
+  height: auto;
 }

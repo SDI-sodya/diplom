@@ -1,59 +1,40 @@
 'use client';
 import styles from './NewsSlider.module.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Splide from "@splidejs/splide";
-import Image from 'next/image';
+import SlidesList from './SlidesList';
 
 export default function NewsSlider() {
+
+  const [slides, setSlides] = useState([]);
+
   useEffect(() => {
-    new Splide(".news-slider", {
-      type: 'loop',
-      drag: false,
-      gap: '100px',
-      height: '9rem',
-      perPage: 3,
-      breakpoints: {
-        640: { height: '6rem' },
-      },
-      // autoplay: true,
-      // interval: 5000,
-      // pauseOnFocus: true,
-      // pauseOnHover: true,
-      // resetProgress: true,
-    }).mount();
+    // Загрузка данных из JSON-файла
+    fetch('/data/news.json')
+      .then((response) => response.json())
+      .then((data) => setSlides(data))
+      .catch((error) => console.error('Error loading slides:', error));
   }, []);
 
+
+  useEffect(() => {
+    if (slides.length > 0) {
+      const splide = new Splide(".news-slider", {
+        type: 'loop',
+        gap: '100px',
+        perPage: 3,
+      });
+  
+      splide.mount();
+    }
+  }, [slides]);
+
   return (
-    <div className='wrapper'>
-      <h2>Головні новини</h2>
+    <div className={`wrapper ${styles.newsSection}`}>
+      <h2 className={`${styles.sectionTitle}`}>Новини</h2>
       <section className="splide news-slider" aria-label="Slide">
         <div className="splide__track">
-          <ul className="splide__list">
-            <li className="splide__slide">
-              <div className={`splide__slide__container`}>
-                <div className={`${styles.image}`}>1</div>
-              </div>
-              Lorem Ipsum Dolor Sit Amet
-            </li>
-            <li className="splide__slide">
-              <div className={`splide__slide__container`}>
-                <div className={`${styles.image}`}>2</div>
-              </div>
-              Lorem Ipsum Dolor Sit Amet
-            </li>
-            <li className="splide__slide">
-              <div className={`splide__slide__container`}>
-                <div className={`${styles.image}`}>3</div>
-              </div>
-              Lorem Ipsum Dolor Sit Amet
-            </li>
-            <li className="splide__slide">
-              <div className={`splide__slide__container`}>
-                <div className={`${styles.image}`}>4</div>
-              </div>
-              Lorem Ipsum Dolor Sit Amet
-            </li>
-          </ul>
+          <SlidesList slides={slides} />
         </div>
       </section>
     </div>
