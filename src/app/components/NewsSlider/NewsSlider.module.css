@@ -1,5 +1,5 @@
 .newsSection {
-  margin: 80px auto 0;
+  padding: 80px 0;
 }
 
 .sectionTitle {
@@ -14,9 +14,22 @@
   text-transform: uppercase;
 }
 
-.image {
-  background-color: #cccccc;
-  border: 1px solid #000;
-  width: 100%;
-  height: auto;
+.slider {
+  padding: 20px 0;
+  border-bottom: 1px solid #0000004d;
+  border-top: 1px solid #0000004d;
+}
+
+.arrowNext,
+.arrowPrev {
+  font-size: 1em;
+}
+
+
+.arrowPrev {
+  left: -50px;
+}
+
+.arrowNext {
+  right: -50px;
 }

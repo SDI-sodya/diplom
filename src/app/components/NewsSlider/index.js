@@ -21,7 +21,7 @@ export default function NewsSlider() {
     if (slides.length > 0) {
       const splide = new Splide(".news-slider", {
         type: 'loop',
-        gap: '100px',
+        gap: '30px',
         perPage: 3,
       });
   
@@ -32,11 +32,16 @@ export default function NewsSlider() {
   return (
     <div className={`wrapper ${styles.newsSection}`}>
       <h2 className={`${styles.sectionTitle}`}>Новини</h2>
-      <section className="splide news-slider" aria-label="Slide">
+      <section className={`splide news-slider ${styles.slider}`} aria-label="Slide">
         <div className="splide__track">
           <SlidesList slides={slides} />
         </div>
+        <div className="splide__arrows">
+          <button className={`splide__arrow splide__arrow--prev ${styles.arrowPrev}`}>←</button>
+          <button className={`splide__arrow splide__arrow--next ${styles.arrowNext}`}>→</button>
+        </div>
       </section>
+
     </div>
   )
 }
