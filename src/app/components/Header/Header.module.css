@@ -3,11 +3,6 @@
   background: #0176ba;
 }
 
-.navWrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .mainNav {
   position: relative;
   display: flex;

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Header() {
   return (
   <header id={`${styles.header}`}>
-    <div className={`${styles.navWrapper}`}>
+    <div className='wrapper'>
       <nav className={`${styles.mainNav}`}>
         <div className={`${styles.navLogo}`}>
           <Image
