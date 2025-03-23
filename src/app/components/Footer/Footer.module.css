@@ -1,0 +1,96 @@
+.footer {
+  color: #ffffff;
+  background: #0176ba;
+  padding: 40px 0 10px;
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.navWrapper,
+.logo,
+.navList {
+  /* border: 1px solid #000; */
+}
+
+.logoWrapper {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+  width: 50%;
+}
+
+.logoText {
+  font-size: 1.5em;
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.navListWrapper {
+  width: 50%;
+}
+
+.navList {
+  position: relative;
+  margin: 0 auto;
+  font-family: "Liter", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.navList::after {
+  content: "";
+  width: 1.5px;
+  height: 100%;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  background: #ffffff;
+}
+
+.link {
+  position: relative;
+  color: #ffffff;
+  transition: .2s linear;
+}
+
+.navElem .link {
+  position: relative;
+  padding: 8px 0;
+  display: flex;
+  transition: .2s linear;
+}
+
+.navElem .link::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: .4em;
+  background: #ffffff;
+  transition: .2s linear;
+}
+
+.navElem .link:hover::after {
+  width: 100%;
+}
+
+.copy {
+  padding: 40px 0 0;
+  text-align: center;
+}

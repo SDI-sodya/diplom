@@ -18,3 +18,19 @@ ul {
   max-width: 1300px;
   margin: 0 auto;
 }
+
+.title {
+  color: #0176ba;
+  margin: 0 0 30px;
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}

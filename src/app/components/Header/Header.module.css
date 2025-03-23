@@ -31,10 +31,24 @@
 .navList {
   height: 100%;
   vertical-align: middle;
+  display: flex;
 }
 
 .navElem {
-  display: inline-block;
-  padding: 2.5em .8em;
   box-sizing: border-box;
+  position: relative; 
+  padding: 2.5em 0;
+}
+
+.link {
+  color: #ffffff;
+  transition: .2s linear;
+}
+
+.navElem .link {
+  padding: 2.5em 0.8em;
+}
+
+.navElem .link:hover {
+  background-color: #2187c3;
 }
