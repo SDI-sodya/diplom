@@ -31,7 +31,7 @@ export default function NewsSlider() {
 
   return (
     <div className={`wrapper ${styles.newsSection}`}>
-      <h2 className={`${styles.sectionTitle}`}>Новини</h2>
+      <h2 className='title'>Новини</h2>
       <section className={`splide news-slider ${styles.slider}`} aria-label="Slide">
         <div className="splide__track">
           <SlidesList slides={slides} />
